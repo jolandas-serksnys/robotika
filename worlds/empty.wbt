@@ -1,0 +1,133 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.5459030832372102 -0.7313503331338447 -0.4087988673383548 1.5429168160496933
+  position -0.9989411021939717 1.4704017794885842 0.42001802172961983
+}
+E-puck {
+  hidden position_0_0 3.095606977120449e-08
+  hidden position_0_1 3.095611156258109e-08
+  hidden rotation_1 -1 0 0 2.9802322387695313e-08
+  hidden rotation_2 -1 0 0 2.9802322387695313e-08
+  translation -1.666259588179172e-10 -6.392029431026222e-05 -9.677240262885673e-11
+  rotation 0.0003235714036278197 4.411456720345421e-10 0.999999947650772 6.0619703689527255e-06
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+}
+Solid {
+  translation 0 0 -0.31
+  children [
+    DEF b Shape {
+      geometry Box {
+        size 0.6 0.1 0.1
+      }
+    }
+  ]
+  boundingObject USE b
+}
+Solid {
+  translation -0.16 0 -0.23
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    DEF b Shape {
+      geometry Box {
+        size 0.6 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE b
+}
+Solid {
+  translation 0.17 0 0.21
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    DEF b Shape {
+      geometry Box {
+        size 0.6 0.1 0.1
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE b
+}
+Solid {
+  translation -0.41 0 0.1
+  children [
+    DEF b Shape {
+      geometry Box {
+        size 0.6 0.1 0.1
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE b
+}
+Solid {
+  translation -0.159997 0 0.67
+  rotation 0 1 0 1.5708
+  children [
+    DEF b Shape {
+      geometry Box {
+        size 0.6 0.1 0.1
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE b
+}
+Solid {
+  translation -0.42 0 0.42
+  children [
+    DEF b Shape {
+      geometry Box {
+        size 0.6 0.1 0.1
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject USE b
+}
+Solid {
+  translation 0.42 0 0.46
+  children [
+    DEF b Shape {
+      geometry Box {
+        size 0.6 0.1 0.1
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject USE b
+}
+Solid {
+  translation 0 0 0.76
+  children [
+    DEF b Shape {
+      geometry Box {
+        size 0.6 0.1 0.1
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject USE b
+}
+Solid {
+  translation 0.42 0 -0.04
+  children [
+    DEF b Shape {
+      geometry Box {
+        size 0.6 0.1 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE b
+}
