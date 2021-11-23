@@ -7,4 +7,4 @@ centralWidgetVisible: 1
 orthographicViewHeight: 1
 textFiles: 1 "controllers/e-puck_avoid_obstacles/e-puck_avoid_obstacles.c" "controllers/pytest/pytest.py"
 consoles: Console:All:All
-renderingDevicePerspectives: e-puck:camera;1;1;0;0
+renderingDevicePerspectives: e-puck:camera;1;10.5385;0;0
