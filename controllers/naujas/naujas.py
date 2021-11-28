@@ -31,15 +31,26 @@ def getDistance(index):
     #print(index, val)
     return val
 
+def setVelocity(left, right):
+    if left >= 0 and left <= MAX_SPEED and right >= 0 and right <= MAX_SPEED:
+        leftWheel.setVelocity(left)
+        rightWheel.setVelocity(right)
+    else:
+        if left < 0:
+            leftWheel.setVelocity(0)
+        if right < 0:
+            rightWheel.setVelocity(0)
+        if left > MAX_SPEED:
+            leftWheel.setVelocity(MAX_SPEED)
+        if right > MAX_SPEED:
+            rightWheel.setVelocity(MAX_SPEED)
 
-leftWheel.setVelocity(MAX_SPEED)
-rightWheel.setVelocity(MAX_SPEED)
+setVelocity(MAX_SPEED, MAX_SPEED)
 while robot.step(timestep) != -1:
     if getDistance(2) < 90:
         break
         
-leftWheel.setVelocity(MAX_SPEED)
-rightWheel.setVelocity(-MAX_SPEED)
+setVelocity(MAX_SPEED, 0)
 while robot.step(timestep) != -1:
     if getDistance(1) > 90:
         break
@@ -53,18 +64,13 @@ while robot.step(timestep) != -1:
         #print(message)
         receiver.nextPacket()
 
-    if getDistance(0) > 250 or getDistance(7) > 250:
-        leftWheel.setVelocity(MAX_SPEED - (MAX_SPEED / 100 * ((getDistance(0) + getDistance(7)) / 2)))
-        rightWheel.setVelocity(MAX_SPEED)
+    if getDistance(0) > 100 or getDistance(7) > 100:
+        setVelocity(MAX_SPEED - (MAX_SPEED / 75 * ((getDistance(0) + getDistance(7)) / 2)), MAX_SPEED)
+    elif getDistance(2) > 400 or getDistance(1) > 400:
+        setVelocity(MAX_SPEED - (MAX_SPEED / 75 * getDistance(2)), MAX_SPEED)
     elif getDistance(0) < 100 and getDistance(1) < 100:
-        leftWheel.setVelocity(MAX_SPEED)
-        rightWheel.setVelocity(MAX_SPEED - (MAX_SPEED / 100 * getDistance(0)))
-    elif getDistance(2) > 500:
-        leftWheel.setVelocity(MAX_SPEED - (MAX_SPEED / 100 * getDistance(2)))
-        rightWheel.setVelocity(MAX_SPEED)
+        setVelocity(MAX_SPEED, MAX_SPEED - (MAX_SPEED / 100 * getDistance(0)))
     else:
-        leftWheel.setVelocity(MAX_SPEED)
-        rightWheel.setVelocity(MAX_SPEED)
+        setVelocity(MAX_SPEED, MAX_SPEED)
         
-leftWheel.setVelocity(0)
-rightWheel.setVelocity(0)
+setVelocity(0, 0)
