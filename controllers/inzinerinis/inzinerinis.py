@@ -16,7 +16,6 @@ def getDistance(sensor):
     print(r)
     return r
 
-
 # Maximum speed for the velocity value of the wheels.
 # Don't change this value.
 MAX_SPEED = 5.24
