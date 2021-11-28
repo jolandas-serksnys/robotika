@@ -1,12 +1,18 @@
 from controller import Robot, Motor
+import struct
 
 MAX_SPEED = 6.28
 
 # Get pointer to the robot.
 robot = Robot()
+checkpoints = []
 
 # Get the time step of the current world.
 timestep = int(robot.getBasicTimeStep())
+
+receiver = robot.getDevice('receiver')
+receiver.enable(timestep)
+receiver.setChannel(1)
 
 # Get pointer to the robot wheels motors.
 leftWheel = robot.getDevice('left wheel motor')
@@ -22,7 +28,7 @@ psarr = [robot.getDevice('ps' + str(i)) for i in range(8)]
 
 def getDistance(index):
     val = psarr[index].getValue()
-    print(index, val)
+    #print(index, val)
     return val
 
 
@@ -39,6 +45,14 @@ while robot.step(timestep) != -1:
         break
         
 while robot.step(timestep) != -1:
+    if receiver.getQueueLength() > 0:
+        message = struct.unpack('i', receiver.getData())
+        if message not in checkpoints:
+            print('adding checkpoint #', message)
+            checkpoints.append(message)
+        #print(message)
+        receiver.nextPacket()
+
     if getDistance(0) > 250 or getDistance(7) > 250:
         leftWheel.setVelocity(MAX_SPEED - (MAX_SPEED / 100 * ((getDistance(0) + getDistance(7)) / 2)))
         rightWheel.setVelocity(MAX_SPEED)

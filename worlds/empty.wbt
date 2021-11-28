@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.04770456615831523 -0.688725731033008 -0.7234508565069887 3.2139125082416897
-  position -0.08888733732966336 0.870861576187789 -0.015251663896868897
+  orientation 0.18807387584755672 -0.9450059497708687 -0.26756676198910856 4.265131497240258
+  position 0.9751065610866365 0.7910731305088694 -0.6254912718035328
 }
 E-puck {
   translation -0.04 -6.41627e-05 -0.11
@@ -115,6 +115,50 @@ Solid {
   ]
   name "solid(8)"
   boundingObject USE b
+}
+Robot {
+  translation -0.05 -0.04 0.19
+  children [
+    Emitter {
+      translation 0 0.05 0
+      channel 1
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "checkpoint_1"
+  controller "checkpoint"
+}
+Robot {
+  translation -0.4 -0.04 0.21
+  children [
+    Emitter {
+      translation 0 0.05 0
+      channel 1
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "checkpoint_2"
+  controller "checkpoint"
 }
 Solid {
   translation 0.42 0 -0.04
