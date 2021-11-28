@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.18807387584755672 -0.9450059497708687 -0.26756676198910856 4.265131497240258
-  position 0.9751065610866365 0.7910731305088694 -0.6254912718035328
+  orientation 0.11817349679151161 -0.9299510972210314 -0.34817521656985645 3.7149414335741726
+  position 0.47848847459812444 0.9647730708553491 -0.8829416541350678
 }
 E-puck {
   translation -0.04 -6.41627e-05 -0.11
@@ -121,6 +121,7 @@ Robot {
   children [
     Emitter {
       translation 0 0.05 0
+      range 0.05
       channel 1
     }
     Shape {
@@ -137,12 +138,14 @@ Robot {
   ]
   name "checkpoint_1"
   controller "checkpoint"
+  customData "1"
 }
 Robot {
   translation -0.4 -0.04 0.21
   children [
     Emitter {
       translation 0 0.05 0
+      range 0.05
       channel 1
     }
     Shape {
@@ -159,6 +162,7 @@ Robot {
   ]
   name "checkpoint_2"
   controller "checkpoint"
+  customData "2"
 }
 Solid {
   translation 0.42 0 -0.04
