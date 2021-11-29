@@ -48,7 +48,7 @@ while robot.step(timestep) != -1:
         sideRule = message
         receiver.nextPacket()
         
-    if sideRule % 2 == 0:
+    if sideRule == 0:
         if getDistance(0) > 100 or getDistance(7) > 100 or getDistance(1) > 250:
             setVelocity(0, MAX_SPEED)
         elif getDistance(2) < 150 and getDistance(1) < 80:
@@ -57,7 +57,7 @@ while robot.step(timestep) != -1:
             setVelocity(0, MAX_SPEED)
         else:
             setVelocity(MAX_SPEED, MAX_SPEED)
-    else:
+    elif sideRule == 1:
         if getDistance(0) > 100 or getDistance(7) > 100 or getDistance(6) > 250:
             setVelocity(MAX_SPEED, 0)
         elif getDistance(5) < 150 and getDistance(6) < 80:
@@ -66,5 +66,7 @@ while robot.step(timestep) != -1:
             setVelocity(MAX_SPEED, 0)
         else:
             setVelocity(MAX_SPEED, MAX_SPEED)
+    else:
+        break
         
 setVelocity(0, 0)
