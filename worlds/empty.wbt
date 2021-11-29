@@ -151,7 +151,7 @@ Robot {
     Shape {
       appearance Appearance {
         material Material {
-          diffuseColor 1 0 0
+          diffuseColor 0 0.666667 1
         }
       }
       geometry Cylinder {
@@ -162,7 +162,7 @@ Robot {
   ]
   name "checkpoint_2"
   controller "checkpoint"
-  customData "2"
+  customData "0"
 }
 Solid {
   translation 0.42 0 -0.04
