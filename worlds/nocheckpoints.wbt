@@ -1,0 +1,516 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -1 0 0 1.5707963267948966
+  position 6.464862136557425e-16 4.7052932454089555 -1.6324765308332026e-16
+}
+E-puck {
+  translation 0.77 -5.92527e-05 -0.0399982
+  rotation -3.0309899999860773e-06 0.9999999999954066 9.80754999995495e-10 3.14159
+  controller "naujas"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.75 1.75
+}
+Group {
+  children [
+    Solid {
+      translation -0.75 0 0.125
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.25 0 0.125
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(2)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -3.52079e-14 0 0.125
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(6)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.25 0 0.125
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(7)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.75 0 0.105
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(18)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.5 0 0.375
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(3)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.24 0 0.375
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(9)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 2.65359e-08 0 0.625
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(12)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.25 0 0.625
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(13)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.5 0 0.625
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(14)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.5 0 -0.125
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(19)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 3.52079e-14 0 -0.125
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(23)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 1.32685e-06 0 -0.625
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(30)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.749999 0 -0.375
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(31)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.500001 0 -0.625
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(32)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.25 0 -0.125
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(24)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.5 0 -0.125
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(25)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.5 0 -0.375
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(26)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.25 0 -0.375
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(27)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.25 0 -0.375
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(21)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.75 0 -0.375
+      rotation 0 1 0 3.14159
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(34)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.625 0 0.499998
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(5)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.125 0 0.499998
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(10)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.625 0 0.499998
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(15)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.625 0 0.249998
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(16)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.625 0 -2e-06
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(17)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.125 0 -2.5099e-06
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(22)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.375 0 -0.250002
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(20)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.375 0 -0.250002
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(28)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.125 0 -0.500002
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(29)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.625 0 -0.500002
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(35)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.375 0 -0.750002
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(36)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.625 0 -0.500002
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(33)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.375 0 0.749998
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject USE b
+    }
+    Solid {
+      translation -0.375 0 0.249998
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(1)"
+      boundingObject USE b
+    }
+    Solid {
+      translation 0.375 0 0.249998
+      rotation 0 -1 0 -1.5707953071795862
+      children [
+        DEF b Shape {
+          geometry Box {
+            size 0.35 0.1 0.1
+          }
+        }
+      ]
+      name "solid(8)"
+      boundingObject USE b
+    }
+  ]
+}
+Robot {
+  translation -0.86 -0.04 0.01
+  children [
+    Emitter {
+      translation 0 0.05 0
+      range 0.05
+      channel 1
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 1 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "checkpoint_fin"
+  controller "checkpoint"
+  customData "2"
+}
