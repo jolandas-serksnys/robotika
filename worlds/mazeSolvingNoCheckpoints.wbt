@@ -9,7 +9,7 @@ Viewpoint {
 E-puck {
   translation 0.77 -5.92527e-05 -0.0399982
   rotation -3.0309899999860773e-06 0.9999999999954066 9.80754999995495e-10 3.14159
-  controller "naujas"
+  controller "mazeSolvingRobot"
 }
 TexturedBackground {
 }
